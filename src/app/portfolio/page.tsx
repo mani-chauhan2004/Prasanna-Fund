@@ -1,6 +1,5 @@
 'use client';
 import React, { useEffect, useState } from "react";
-import HeroMoneySVG from "../../components/HeroMoneySVG";
 import PortfolioClientGrid from "../../components/PortfolioClientGrid";
 import Navbar from '../../components/Navbar';
 

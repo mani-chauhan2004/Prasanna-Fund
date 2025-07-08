@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const logos = [
   "/logos/everstage.jpg",
@@ -21,9 +22,11 @@ export default function LogoCarousel() {
         <div className="flex gap-20 animate-carousel whitespace-nowrap hover:[animation-play-state:paused]">
           {logos.concat(logos).map((logo, i) => (
             <div key={i} className="w-36 h-36 flex items-center justify-center">
-              <img
+              <Image
                 src={logo}
                 alt="Portfolio Logo"
+                width={144}
+                height={144}
                 className="w-full h-full object-contain rounded-full shadow-md bg-pf-black"
                 draggable={false}
               />

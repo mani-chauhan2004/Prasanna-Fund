@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { createPortal } from "react-dom";
-import type { RefObject } from "react";
+import Image from "next/image";
 
 // --- Static Data ---
 const portfolioData = [
@@ -198,7 +198,7 @@ function WebsitePreviewModal({
   );
 }
 
-function PortfolioCard({ company }: { company: any }) {
+function PortfolioCard({ company }: { company: { name: string; logo: string; sector: string; stage: string; tag: string; description: string; link: string } }) {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
   const cardRef = React.useRef<HTMLDivElement | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
@@ -285,7 +285,13 @@ function PortfolioCard({ company }: { company: any }) {
         {/* Logo Area */}
         <div className="flex-shrink-0 flex items-center justify-center md:rounded-l-2xl rounded-t-2xl md:rounded-tr-none w-full md:w-40 h-32 md:h-auto overflow-hidden border-4 border-pf-dark shadow-lg bg-transparent">
           {company.logo ? (
-            <img src={company.logo} alt={company.name + ' logo'} className="w-full h-full object-cover" />
+            <Image
+              src={company.logo}
+              alt={company.name + ' logo'}
+              width={100}
+              height={100}
+              className="w-full h-full object-cover"
+            />
           ) : (
             <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-pf-gold flex items-center justify-center text-5xl font-bold text-pf-black font-raleway shadow-md">
               {company.name[0]}

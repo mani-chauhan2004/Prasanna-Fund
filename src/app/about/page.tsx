@@ -39,11 +39,9 @@ export default function AboutPage() {
               {(() => {
                 const n = 5;
                 const width = 1000;
-                const height = 380;
-                const xStep = width / (n - 1);
                 // Much steeper upward growth
                 const yVals = [280, 230, 130, 90, 30];
-                const points = yVals.map((y, i) => `${i * xStep},${y}`).join(' ');
+                const points = yVals.map((y, i) => `${i * width / (n - 1)},${y}`).join(' ');
                 return (
                   <>
                     <polyline
@@ -59,7 +57,7 @@ export default function AboutPage() {
                     {yVals.map((y, i) => (
                       <circle
                         key={i}
-                        cx={i * xStep}
+                        cx={i * width / (n - 1)}
                         cy={y}
                         r="5"
                         fill="#181818"
@@ -83,7 +81,6 @@ export default function AboutPage() {
               ];
               const n = companies.length;
               const width = 1000;
-              const height = 380;
               const xStep = width / (n - 1);
               const yVals = [260, 200, 100, 60, 20];
               return companies.map((item, idx) => (

@@ -5,11 +5,11 @@ export default function Hero() {
     <section className="w-full min-h-[70vh] flex items-center justify-center px-4 md:px-0 py-20 md:py-32">
       <div className="w-full max-w-3xl mx-auto flex flex-col items-center justify-center text-center">
         <h1 className="text-5xl md:text-7xl font-extrabold text-pf-gold leading-tight font-raleway mb-6">
-          Prasanna Shankar:<br />
+          Prasanna Shankar:&apos;s<br />
           <span className="text-pf-cream">Force of Nature Investor</span>
         </h1>
         <p className="mt-2 text-2xl md:text-3xl text-pf-cream font-medium mb-10">
-          Backing the world's most ambitious founders. 300M fund led by Rippling's co-founder, investing at the edge of innovation.
+          Backing the world&apos;s most ambitious founders. 300M fund led by Rippling&apos;s co-founder, investing at the edge of innovation.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 const bullets = [
   {
@@ -24,7 +25,6 @@ export default function WhyFoundersPickUs() {
   const lineRef = useRef<HTMLDivElement>(null);
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [glow, setGlow] = useState(0);
-  const [branchGlow, setBranchGlow] = useState([false, false, false]);
 
   // Main line glow logic
   useEffect(() => {
@@ -84,7 +84,7 @@ export default function WhyFoundersPickUs() {
                     >
                       <div className="bg-gray-100 rounded-3xl shadow-2xl border-2 border-pf-gold px-20 py-16 flex flex-col items-center min-h-[260px] max-w-3xl w-full">
                         <div className="w-40 h-40 mb-8 flex items-center justify-center">
-                          <img src={b.svg} alt={b.title + ' illustration'} className="w-full h-full object-contain" />
+                          <Image src={b.svg} alt={b.title + ' illustration'} width={160} height={160} />
                         </div>
                         <div className="text-3xl font-bold text-pf-gold font-raleway mb-4 text-center">{b.title}</div>
                         <div className="text-lg font-medium text-black/80 leading-relaxed text-center">{b.desc}</div>
@@ -110,7 +110,7 @@ export default function WhyFoundersPickUs() {
                     >
                       <div className="bg-gray-100 rounded-3xl shadow-2xl border-2 border-pf-gold px-20 py-16 flex flex-col items-center min-h-[260px] max-w-3xl w-full">
                         <div className="w-40 h-40 mb-8 flex items-center justify-center">
-                          <img src={b.svg} alt={b.title + ' illustration'} className="w-full h-full object-contain" />
+                          <Image src={b.svg} alt={b.title + ' illustration'} width={160} height={160} />
                         </div>
                         <div className="text-3xl font-bold text-pf-gold font-raleway mb-4 text-center">{b.title}</div>
                         <div className="text-lg font-medium text-black/80 leading-relaxed text-center">{b.desc}</div>

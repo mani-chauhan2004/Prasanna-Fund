@@ -1,28 +1,5 @@
 "use client";
-import React, { useState } from "react";
-import Navbar from "../../components/Navbar";
-
-interface FormState {
-  name: string;
-  email: string;
-  deck: string;
-  heard: string;
-}
-
-interface FormErrors {
-  name?: string;
-  email?: string;
-  deck?: string;
-  heard?: string;
-}
-
-const howYouHeardOptions = [
-  "Referral",
-  "Event",
-  "Social Media",
-  "Search Engine",
-  "Other"
-];
+import React from "react";
 
 export default function ContactPage() {
   return(
