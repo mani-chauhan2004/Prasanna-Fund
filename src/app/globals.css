@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "raleway";
+  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  font-size: 16px;
+  /* --font-inter: 'Inter', sans-serif;
+  /* Prasanna Fund Color Scheme */
+  /* --pf-gold: #FFB800;
+  --pf-gold-light: #FFC43A;
+  --pf-brown: #3A1F0B;
+  --pf-brown-dark: #22223B;
+  --pf-purple: #5B2A86;
+  --pf-purple-dark: #3D1A5A;
+  --pf-cream: #FFF8E1;
+  --pf-white: #FFFFFF;
+  --pf-slate: #4A4E69; */
+}
+
+@theme {
+  --color-pf-black: #181818;
+  --color-pf-dark: #232323;
+  --color-pf-gold: #FFB800;
+  --color-pf-gold-light: #FFD166;
+  --color-pf-yellow-gold: #FDB61C;
+  --color-pf-brown: #3A1F0B;
+  --color-pf-brown-dark: #22223B;
+  --color-pf-purple: #5B2A86;
+  --color-pf-purple-dark: #3D1A5A;
+  --color-pf-cream: #FFF8E1;
+  --color-pf-white: #FFFFFF;
+  --color-pf-slate: #4A4E69;
+}
