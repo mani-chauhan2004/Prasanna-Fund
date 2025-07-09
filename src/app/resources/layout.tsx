@@ -7,7 +7,6 @@ export const metadata = {
   export default function AboutLayout({ children }: { children: React.ReactNode }) {
     return (
         <>
-            <Navbar currentPath="resources" />
             {children}
         </>
     );

@@ -1,4 +1,5 @@
 'use client';
+import Navbar from '@/components/Navbar';
 import React, { useState } from 'react';
 
 const resources = [
@@ -109,6 +110,8 @@ export default function ResourcesPage() {
     : resources.filter(resource => resource.type === active);
 
   return (
+    <>
+    <Navbar currentPath="/resources" />
     <section className="w-full min-h-[80vh] px-4 md:px-20 lg:px-32 py-24 bg-gray-50">
       <h1 className="text-4xl md:text-5xl font-bold text-pf-black mb-12 font-display text-center">Resources</h1>
       
@@ -135,5 +138,6 @@ export default function ResourcesPage() {
         ))}
       </div>
     </section>
+    </>
   );
 }
