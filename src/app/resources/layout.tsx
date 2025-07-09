@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/Navbar";
 export const metadata = {
     title: "Resources | Pras Capital",
     description: "Resources for founders and investors."
