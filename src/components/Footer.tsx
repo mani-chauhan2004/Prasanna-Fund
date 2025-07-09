@@ -77,7 +77,6 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row gap-8 md:gap-12">
           <a href="/about" className="text-pf-black font-medium text-base hover:text-gray-600">About</a>
           <a href="/portfolio" className="text-pf-black font-medium text-base hover:text-gray-600">Portfolio</a>
-          <a href="/azure-credits" className="text-pf-black font-medium text-base hover:text-gray-600">Azure Credits</a>
           <a href="/contact" className="text-pf-black font-medium text-base hover:text-gray-600">Contact</a>
         </div>
         {/* Copyright */}
