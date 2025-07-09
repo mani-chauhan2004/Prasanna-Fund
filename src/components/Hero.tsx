@@ -31,7 +31,7 @@ export default function Hero() {
             showName ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          Prasanna Shankar
+          Fueling the technologies that will shape tomorrow
         </h1>
         
         <p 
@@ -39,15 +39,7 @@ export default function Hero() {
             showSubtitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          Co-founder of Rippling ($16B)
-        </p>
-
-        <p 
-          className={`text-base md:text-lg text-white/80 font-body-lg font-light mb-14 leading-relaxed max-w-5xl transition-all duration-1000 ease-out ${
-            showDesc ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
-        >
-          ₹300M fund backing infrastructure, SaaS, and global innovation
+          We deploy $300 m+ into breakthrough software-driven innovation—AI, solar, blockchain, and more—across private startups and public equities.
         </p>
 
         <div 

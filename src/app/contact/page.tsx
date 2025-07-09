@@ -13,7 +13,7 @@ export default function ContactPage() {
             
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSe-example-form-link/viewform"
+            href="https://forms.gle/7gcsHcviMnCeYgn18"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-pf-black text-white font-medium px-10 py-5 rounded-lg text-2xl hover:bg-gray-800 transition mb-8"

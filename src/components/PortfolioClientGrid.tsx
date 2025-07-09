@@ -115,6 +115,24 @@ const portfolioCompanies = [
     description: "No-code commission automation.",
     link: "https://www.everstage.com/",
   },
+  { 
+    name: "Coinbase",
+    logo: "/logos/coinbase.png",
+    sector: "Infra",
+    stage: "IPO",
+    tag: "IPO - Infra",
+    description: "Crypto exchange.",
+    link: "https://www.coinbase.com/",
+  },
+  {
+    name: "Alibaba",
+    logo: "/logos/alibaba.jpg",
+    sector: "Infra",
+    stage: "IPO",
+    tag: "IPO - Infra",
+    description: "Chinese e-commerce giant.",
+    link: "https://www.alibaba.com/",
+  },
 ];
 
 export default function PortfolioClientGrid() {

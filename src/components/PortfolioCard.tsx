@@ -85,6 +85,20 @@ export default function PortfolioCard({ company }: PortfolioCardProps) {
       <div className="mt-8 opacity-0 group-hover:opacity-100">
         <div className="w-full h-px bg-gray-200"></div>
       </div>
+
+      {/* Visit site arrow icon */}
+      <a
+        href={company.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Visit ${company.name} website`}
+        className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      >
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-400 group-hover:text-pf-black">
+          <line x1="7" y1="17" x2="17" y2="7" />
+          <polyline points="7 7 17 7 17 17" />
+        </svg>
+      </a>
     </div>
   );
 } 
