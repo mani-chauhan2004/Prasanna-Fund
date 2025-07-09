@@ -39,7 +39,7 @@ export default function Hero() {
             showSubtitle ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          We deploy $300 m+ into breakthrough software-driven innovation—AI, solar, blockchain, and more—across private startups and public equities.
+          We deploy $300m+ into breakthrough software-driven innovation—AI, solar, blockchain, and more—across private startups and public equities.
         </p>
 
         <div 
