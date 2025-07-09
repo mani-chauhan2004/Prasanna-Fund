@@ -26,15 +26,7 @@ const footerLinks = [
       { name: "Insights", href: "#blog" },
       { name: "Careers/Jobs", href: "#jobs" },
     ],
-  },
-  {
-    title: "Azure Credits",
-    links: [
-      { name: "Application", href: "#azure-credits" },
-      { name: "FAQ", href: "#azure-credits" },
-      { name: "Contact", href: "#firm" },
-    ],
-  },
+  }
 ];
 
 const socialLinks = [
