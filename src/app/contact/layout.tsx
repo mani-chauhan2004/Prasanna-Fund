@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 
 export const metadata = {
-  title: "Contact Prasanna Fund",
-  description: "Contact Prasanna Fund for investment opportunities."
+  title: "Contact Pras Capital",
+  description: "Contact Pras Capital for investment opportunities."
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

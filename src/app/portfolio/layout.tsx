@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Prasanna Fund | Portfolio",
+  title: "Pras Capital | Portfolio",
   description: "Explore 50+ investments from Alliance DAO to Zamp, spanning SaaS, fintech & Web3 infra."
 };
 

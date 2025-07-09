@@ -1,23 +1,30 @@
 "use client";
 import React from "react";
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function ContactPage() {
-  return(
-    <div className="min-h-[90vh] w-full bg-pf-black flex flex-col justify-center items-center border-t border-pf-gold">
-      <div className="w-full text-center text-pf-cream text-2xl leading-relaxed flex flex-col justify-center items-center flex-1">
-        <div className="mb-4">
-          <span className="block mb-1 text-pf-gold font-semibold">For founders</span>
-          <span className="block mb-2 text-pf-cream/90">DM <span className="font-semibold">@myprasanna</span> on X for a 48-hour reply.</span>
-          <span className="block text-pf-gold font-semibold mt-2">For LPs & press</span>
-          <a href="mailto:investor-relations@prasannafund.com" className="block text-pf-gold underline font-medium">investor-relations@prasannafund.com</a>
-        </div>
-        <div className="mt-8">
-          <h2 className="text-pf-gold font-bold text-2xl mb-2 text-center">Legal Disclaimer</h2>
-          <p className="text-pf-cream text-lg text-center max-w-3xl mx-auto">
-            Information provided is for discussion purposes only and does not constitute an offer to sell or a solicitation of an offer to buy securities. Past performance is not indicative of future results. Microsoft and Azure are trademarks of Microsoft Corp.; credit amounts and eligibility are subject to change by Microsoft.
+  return (
+    <>
+      <section className="bg-white min-h-[90vh] py-32 md:py-40 px-4 flex flex-col items-center justify-center w-full">
+        <div className="w-full text-center flex flex-col items-center justify-center">
+          <h1 className="text-6xl md:text-7xl font-bold text-pf-black mb-8 font-display">Contact</h1>
+          <p className="text-pf-black text-xl md:text-2xl font-body leading-relaxed mb-10 font-light">
+            
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe-example-form-link/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-pf-black text-white font-medium px-10 py-5 rounded-lg text-2xl hover:bg-gray-800 transition mb-8"
+          >
+            Fill Out Contact Form
+          </a>
+          <p className="text-gray-500 text-base mt-2 max-w-xl">
+            Disclaimer: By submitting this form, you consent to us storing your email and message for the purpose of responding to your inquiry. We will not share your information with third parties. This form is for initial contact only and does not constitute an offer or agreement.
           </p>
         </div>
-      </div>
-    </div>
-  )
+      </section>
+    </>
+  );
 }

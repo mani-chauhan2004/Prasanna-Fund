@@ -1,36 +1,101 @@
 @import "tailwindcss";
-
-@font-face {
-  font-family: "raleway";
-  src: url("../assets/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
   font-size: 16px;
-  /* --font-inter: 'Inter', sans-serif;
-  /* Prasanna Fund Color Scheme */
-  /* --pf-gold: #FFB800;
-  --pf-gold-light: #FFC43A;
-  --pf-brown: #3A1F0B;
-  --pf-brown-dark: #22223B;
-  --pf-purple: #5B2A86;
-  --pf-purple-dark: #3D1A5A;
-  --pf-cream: #FFF8E1;
-  --pf-white: #FFFFFF;
-  --pf-slate: #4A4E69; */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 @theme {
-  --color-pf-black: #181818;
-  --color-pf-dark: #232323;
-  --color-pf-gold: #FFB800;
-  --color-pf-gold-light: #FFD166;
-  --color-pf-yellow-gold: #FDB61C;
-  --color-pf-brown: #3A1F0B;
-  --color-pf-brown-dark: #22223B;
-  --color-pf-purple: #5B2A86;
-  --color-pf-purple-dark: #3D1A5A;
-  --color-pf-cream: #FFF8E1;
-  --color-pf-white: #FFFFFF;
-  --color-pf-slate: #4A4E69;
+  --color-pf-black: #1a1a1a;
+  --color-pf-dark: #f8f9fa;
+  --color-pf-gold: #1a1a1a;
+  --color-pf-gold-light: #404040;
+  --color-pf-yellow-gold: #666666;
+  --color-pf-brown: #f8f9fa;
+  --color-pf-brown-dark: #e9ecef;
+  --color-pf-purple: #6c757d;
+  --color-pf-purple-dark: #495057;
+  --color-pf-cream: #1a1a1a;
+  --color-pf-white: #ffffff;
+  --color-pf-slate: #6c757d;
+  --color-border: #e0e0e0;
+  
+  /* Typography */
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-family-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Base typography styles */
+body {
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem; /* 16px base */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Display headings */
+.font-display {
+  font-family: var(--font-family-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Body text */
+.font-body {
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: 1rem; /* 16px */
+}
+
+/* Caption text */
+.font-caption {
+  font-family: var(--font-family-sans);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 0.875rem; /* 14px */
+}
+
+/* Large body text */
+.font-body-lg {
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: 1.125rem; /* 18px */
+}
+
+/* Extra large body text */
+.font-body-xl {
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: 1.25rem; /* 20px */
+}
+
+/* Global transition styles */
+* {
+  transition: all 0.2s ease;
+}
+
+/* Subtle border utilities */
+.border-subtle {
+  border: 1px solid #e0e0e0;
+}
+
+/* Enhanced spacing utilities */
+.space-y-16 > * + * {
+  margin-top: 4rem;
+}
+
+.space-y-20 > * + * {
+  margin-top: 5rem;
+}
+
+.space-y-24 > * + * {
+  margin-top: 6rem;
 }

@@ -10,13 +10,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Prasanna Fund | Venture Capital",
-  description: "Prasanna Fund is a $300M venture capital fund led by Prasanna Sankar, co-founder of Rippling. Investing in the next generation of transformative technology companies.",
+  title: "Pras Capital | Venture Capital",
+  description: "Pras Capital is a $300M venture capital fund led by Prasanna Sankar, co-founder of Rippling. Investing in the next generation of transformative technology companies.",
   keywords: "venture capital, VC fund, Prasanna Sankar, Rippling, startup investment, technology investment",
   authors: [{ name: "Prasanna Sankar" }],
   openGraph: {
-    title: "Prasanna Fund | Venture Capital",
-    description: "Prasanna Fund is a $300M venture capital fund led by Prasanna Sankar, co-founder of Rippling.",
+    title: "Pras Capital | Venture Capital",
+    description: "Pras Capital is a $300M venture capital fund led by Prasanna Sankar, co-founder of Rippling.",
     type: "website",
   },
 };

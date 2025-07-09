@@ -17,7 +17,7 @@ const logos = [
 
 export default function LogoCarousel() {
   return (
-    <div className="w-full overflow-x-hidden py-12 bg-pf-cream border-t-4 border-t-pf-gold">
+    <div className="w-full overflow-x-hidden py-16 bg-white border-t border-subtle">
       <div className="relative flex items-center">
         <div className="flex gap-20 animate-carousel whitespace-nowrap hover:[animation-play-state:paused]">
           {logos.concat(logos).map((logo, i) => (
