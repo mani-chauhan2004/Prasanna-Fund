@@ -133,6 +133,15 @@ const portfolioCompanies = [
     description: "Chinese e-commerce giant.",
     link: "https://www.alibaba.com/",
   },
+  {
+    name: "Shopster",
+    logo: "/logos/shopster.png",
+    sector: "SaaS",
+    stage: "Seed",
+    tag: "Seed - SaaS",
+    description: "AI-powered e-commerce platform for creating and managing online stores.",
+    link: "https://shopster.ai/",
+  },
 ];
 
 export default function PortfolioClientGrid() {
