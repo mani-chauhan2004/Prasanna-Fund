@@ -39,7 +39,7 @@ export default function Navbar({ currentPath }: { currentPath: string }) {
 
   return (
     <nav
-      className={`w-full flex items-center justify-between px-16 lg:px-24 py-10 min-h-[64px] h-[72px] sticky top-0 z-50 ${
+      className={`w-full flex items-center justify-between px-4 md:px-16 lg:px-24 py-10 min-h-[64px] h-[72px] sticky top-0 z-50 ${
         isScrolled 
           ? 'bg-white/95 backdrop-blur-sm border-b border-subtle' 
           : 'bg-transparent'
@@ -125,24 +125,31 @@ export default function Navbar({ currentPath }: { currentPath: string }) {
             aria-label="Close navigation overlay"
           />
           <aside
-            className="fixed top-0 right-0 h-full w-72 bg-white shadow-lg z-50 flex flex-col pt-24 px-8 gap-8 transition-transform duration-200 ease-in-out"
+            className="fixed top-0 right-0 h-full w-80 bg-white shadow-xl z-50 flex flex-col pt-24 px-6 transition-transform duration-300 ease-in-out"
             style={{ transform: sideOpen ? 'translateX(0)' : 'translateX(100%)' }}
             aria-label="Mobile navigation panel"
           >
-            {links.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className={`uppercase tracking-widest text-lg font-medium py-2 border-b border-subtle ${
-                  currentPath.startsWith(link.href)
-                    ? 'text-pf-black'
-                    : 'text-gray-600 hover:text-pf-black'
-                }`}
-                onClick={() => setSideOpen(false)}
-              >
-                {link.name}
-              </a>
-            ))}
+            <div className="flex flex-col gap-4">
+              {links.map((link) => {
+                const isActive = link.href === '/' 
+                  ? currentPath === '/' 
+                  : currentPath.startsWith(link.href);
+                return (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className={`uppercase tracking-widest text-base font-medium py-4 px-6 border border-gray-200 rounded-lg transition-all duration-200 ${
+                      isActive
+                        ? 'text-pf-black bg-gray-50 border-gray-300 shadow-sm'
+                        : 'text-gray-700 hover:text-pf-black hover:bg-gray-50 hover:border-gray-300'
+                    }`}
+                    onClick={() => setSideOpen(false)}
+                  >
+                    {link.name}
+                  </a>
+                );
+              })}
+            </div>
           </aside>
         </>
       )}

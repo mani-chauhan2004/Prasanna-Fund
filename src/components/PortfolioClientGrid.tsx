@@ -12,6 +12,7 @@ const filterOptions = [
   { label: 'Fintech', value: 'Fintech' },
   { label: 'API', value: 'API' },
   { label: 'HR', value: 'HR' },
+  { label: "Artificial Intelligence(AI)", value: "Artificial Intelligence(AI)" },
 ];
 
 // Original portfolio companies data
@@ -142,6 +143,60 @@ const portfolioCompanies = [
     description: "AI-powered e-commerce platform for creating and managing online stores.",
     link: "https://shopster.ai/",
   },
+  {
+    name: "Aspora",
+    logo: "/logos/aspora.webp",
+    sector: "Fintech",
+    stage: "Seed",
+    tag: "Seed - Fintech",
+    description: "Aspora help users bank seamlessly across countries, invest in diverse assets, access credit and insurance services.",
+    link: "https://www.aspora.com/e",
+  },
+  {
+    name: "Advantage Club AI",
+    logo: "/logos/advantage_club.webp",
+    sector: "HR",
+    stage: "Seed",
+    tag: "Seed - HR",
+    description: "AdvantageClub.ai is an employee engagement platform that enhances workplace experience through rewards, recognition, and community building.",
+    link: "https://www.advantage.ai/",
+  },
+  {
+    name: "Gullak.Money",
+    logo: "/logos/gullak.webp",
+    sector: "Fintech",
+    stage: "Seed",
+    tag: "Seed - Fintech",
+    description: "Gullak.Money aims to create an all-inclusive ecosystem of saving which is accessible to all.",
+    link: "https://www.gullak.money/",
+  },
+  {
+    name: "Movley",
+    logo: "/logos/movley.webp",
+    sector: "SaaS",
+    stage: "Seed",
+    tag: "Seed - SaaS",
+    description: "Your e-commerce brand's product quality control department.",
+    link: "https://www.movley.com/",
+  },
+  {
+    name: "The Happy Company",
+    logo: "/logos/the_happy_company.webp",
+    sector: "Artificial Intelligence(AI)",
+    stage: "Seed",
+    tag: "Seed - Artificial Intelligence(AI)",
+    description: "The Happy Company ® (THC) is an infrastructure platform for the consumer Internet.",
+    link: "https://www.chaicup.co/",
+  },
+  {
+    name: "Togai",
+    logo: "/logos/togai.webp",
+    sector: "SaaS",
+    stage: "Seed",
+    tag: "Seed - SaaS",
+    description: "Togai is plug and play usage based pricing infrastructure to meter your product and implement UBP model with minimal engineering effort.",
+    link: "https://www.togai.com/",
+  }
 ];
 
 export default function PortfolioClientGrid() {

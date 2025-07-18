@@ -35,7 +35,7 @@ export default function AboutPage() {
             </p>
           </div>
           {/* Image column - span more columns for better balance */}
-          <div className={`col-span-1 md:col-span-4 flex flex-col justify-center transition-all duration-1000 ease-out
+          <div className={`col-span-4 md:col-span-4 flex flex-col justify-center transition-all duration-1000 ease-out
             ${showImage ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'}`}>
             <div
               className="h-[420px] md:h-[520px] w-full rounded-3xl bg-center bg-cover shadow-xl"
